@@ -6,10 +6,87 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap" rel="stylesheet">
+
+  
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+    :root {
+      /* Primary */
+      --color-purple-50: hsl(260, 100%, 95%);
+      --color-purple-300: hsl(264, 82%, 80%);
+      --color-purple-500: hsl(263, 55%, 52%);
+
+      /* Neutral */
+      --color-white: hsl(0, 0%, 100%);
+      --color-grey-100: hsl(214, 17%, 92%);
+      --color-grey-200: hsl(0, 0%, 81%);
+      --color-grey-400: hsl(224, 10%, 45%);
+      --color-grey-500: hsl(217, 19%, 35%);
+      --color-dark-blue: hsl(219, 29%, 14%);
+      --color-black: hsl(0, 0%, 7%);
+    }
+
+    body{
+      font-family: 'Barlow Semi Condensed', sans-serif;
+      background-color: var(--color-grey-100);
+    }
+
+    .testimonial-card{
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+    
+    .testimonial-header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .testimonial-info{
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .testimonial-name{
+      margin: 0;
+    }
+
+    .testimonial-status{
+      margin: 0;
+    }
+
+    .testimonial-avatar{
+      border-radius: 50%;
+      width: 40px;
+      height: 40px
+    }
+
+    #card-1{
+      background-color: var(--color-purple-500);
+    }
+
+    #card-2{
+      background-color: var(--color-grey-500);
+    }
+
+    #card-3{
+      background-color: var(--color-white);
+    }
+
+    #card-4{
+      background-color: var(--color-dark-blue);
+    }
+
+    #card-5{
+      background-color: var(--color-white);
+    }
+
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -20,78 +97,106 @@
     <div class="testimonial-card" id="card-1">
       <div class="testimonial-header">
         <img src="/images/image-daniel.jpg" alt="Daniel Clifford" class="testimonial-avatar">
-        <div class="testimonial-name"><h4>Daniel Clifford</h4></div>
-        <div class="testimonial-status"></div><p>Verified Graduate</p>
+        <div class="testimonial-info">
+          <h4 class="testimonial-name">Daniel Clifford</h4>
+          <p class="testimonial-status">Verified Graduate</p>
+        </div>
       </div>
       
-      <h3 class = "testimonial-title">I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.</h3>
+      <h3 class="testimonial-title">
+        I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.
+      </h3>
       
-      <p class ="testimonial-text"></p>“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
-      transition and have heard some people who had an amazing experience here. I signed up 
-      for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
-      The next 12 weeks was the best - and most grueling - time of my life. Since completing 
-      the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”</p>    
+      <p class="testimonial-text">
+        “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
+        transition and have heard some people who had an amazing experience here. I signed up 
+        for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
+        The next 12 weeks was the best - and most grueling - time of my life. Since completing 
+        the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+      </p>
     </div>
     
     <div class="testimonial-card" id="card-2">
       <div class="testimonial-header">
         <img src="/images/image-jonathan.jpg" alt="Jonathan Walters" class="testimonial-avatar">
-        <h4 class="testimonial-name">Jonathan Walters</h4>
-        <p class="testimonial-status">Verified Graduate</p>
+        <div class="testimonial-info">
+          <h4 class="testimonial-name">Jonathan Walters</h4>
+          <p class="testimonial-status">Verified Graduate</p>
+        </div>
       </div>
       
       <h3 class="testimonial-title">The team was very supportive and kept me motivated</h3>
-
-      <p class="testimonial-text">“ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
-      for a big company. This was one of the best investments I’ve made in myself. ”</p>
+      
+      <p class="testimonial-text">
+        “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
+        for a big company. This was one of the best investments I’ve made in myself. ”
+      </p>
     </div>
     
     <div class="testimonial-card" id="card-3">
-      <div class = "testimonial-header">
+      <div class="testimonial-header">
         <img src="/images/image-jeanette.jpg" alt="Jeanette Harmon" class="testimonial-avatar">
-        <h4 class="testimonial-name">Jeanette Harmon</h4>
-        <p class="testimonial-status">Verified Graduate</p>
+        <div class="testimonial-info">
+          <h4 class="testimonial-name">Jeanette Harmon</h4>
+          <p class="testimonial-status">Verified Graduate</p>
+        </div>
       </div>
-
-      An overall wonderful and rewarding experience
-
-      “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
-      while doing something I love. ”
+      
+      <h3 class="testimonial-title">An overall wonderful and rewarding experience</h3>
+      
+      <p class="testimonial-text">
+        “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
+        while doing something I love. ”
+      </p>
     </div>
     
     <div class="testimonial-card" id="card-4">
       <div class="testimonial-header">
         <img src="/images/image-patrick.jpg" alt="Patrick Abrams" class="testimonial-avatar">
-        <h4>Patrick Abrams</h4>
-        <p class="testimonial-status">Verified Graduate</p>
-      </div>  
-      <h3 class="testimonial-title">Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
-      learning from their experiences was easy.</h3>
-
-      <p class="testimonial-text">“ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
-      gave me the confidence necessary to be able to go out in the world and present myself as a capable 
-      junior developer. The standard is above the rest. You will get the personal attention you need from 
-      an incredible community of smart and amazing people. ”</p>
+        <div class="testimonial-info">
+          <h4 class="testimonial-name">Patrick Abrams</h4>
+          <p class="testimonial-status">Verified Graduate</p>
+        </div>
+      </div>
+      
+      <h3 class="testimonial-title">
+        Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
+        learning from their experiences was easy.
+      </h3>
+      
+      <p class="testimonial-text">
+        “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
+        gave me the confidence necessary to be able to go out in the world and present myself as a capable 
+        junior developer. The standard is above the rest. You will get the personal attention you need from 
+        an incredible community of smart and amazing people. ”
+      </p>
     </div>
+    
     <div class="testimonial-card" id="card-5">
       <div class="testimonial-header">
         <img src="/images/image-kira.jpg" alt="Kira Whittle" class="testimonial-avatar">
-        <h4 class="testimonial-name">Kira Whittle</h4>
-        <p class="testimonial-status">Verified Graduate</p>
-      </div>      
-
-        <h3 class="testimonial-title">Such a life-changing experience. Highly recommended!</h3>
-
-        <p class="testimonial-text">“ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
+        <div class="testimonial-info">
+          <h4 class="testimonial-name">Kira Whittle</h4>
+          <p class="testimonial-status">Verified Graduate</p>
+        </div>
+      </div>
+      
+      <h3 class="testimonial-title">Such a life-changing experience. Highly recommended!</h3>
+      
+      <p class="testimonial-text">
+        “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
         professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
         student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
         did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team 
         project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial 
         could ever have. In fact, I’ve often referred to it during interviews as an example of my developent 
         experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 
-        100% recommend! ”</p>
-     </div> 
+        100% recommend! ”
+      </p>
+    </div>
+    
   </section>
+
     
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
